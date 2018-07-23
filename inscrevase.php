@@ -1,3 +1,8 @@
+<!-- 
+pagina para o usuário se registrar no sistema, com informações de contato e profissionais.
+@author Neemias Ramos Ferreira | e-mail: neemias.ferreira@fatec.sp.gov.br
+@since 13/12/2017
+-->
 <?php
 
 	$erro_usuario = isset($_GET['erro_usuario']) ? $_GET['erro_usuario'] : 0;
