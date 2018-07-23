@@ -14,7 +14,6 @@ class bd{
 
 		//criar conexao
 		// mysqli_connect(localizacao do bd, usuario de acesso, senha, banco de dados);
-
 		$con = mysqli_connect($this->host,$this->usuario,$this->senha,$this->database);
 
 		//ajusta o charset de comunicação entre a aplicação e o banco de dados
