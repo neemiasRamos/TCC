@@ -1,3 +1,8 @@
+<!-- 
+pagina inicial do sistema 
+@author Neemias Ramos Ferreira | e-mail: neemias.ferreira@fatec.sp.gov.br
+@since 09/12/2017
+-->
 <?php
 	
 	$erro = isset($_GET['erro']) ? $_GET['erro'] : 0; //if ternário, se a condição for verdadeira sera executado a instrução a esquerda do ':' caso for falsa sera executado a instrução a direita do ':' ||| caso o indice 'erro' da variavel $_GET exista(isset) então atribui para a variavel $erro o valor contido nesse indice, caso contrario atribua o valor de 0
@@ -22,15 +27,14 @@
 	   	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	    <!--[if lt IE 9]>
-	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	    <![endif]-->
 
 		<script>
 			$(document).ready(function(){
-				//verificar se os campos de usuário e senha foram devidamente preenchidos
+			//verificar se os campos de usuário e senha foram devidamente preenchidos
 				$('#btn_login').click(function(){
-
 					var campo_vazio = false;
 
 					if($('#campo_usuario').val() == ''){
