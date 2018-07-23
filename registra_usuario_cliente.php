@@ -1,3 +1,8 @@
+<!-- 
+classe php para registrar o usuário no banco de dados
+@author Neemias Ramos Ferreira | e-mail: neemias.ferreira@fatec.sp.gov.br
+@since 09/12/2017
+-->
 <?php
 	//trazer o arquivo bd.class.php
 	require_once('bd.class.php');
