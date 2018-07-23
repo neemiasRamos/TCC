@@ -1,3 +1,8 @@
+<!-- 
+classe php para validar as informações do login de usuário
+@author Neemias Ramos Ferreira | e-mail: neemias.ferreira@fatec.sp.gov.br
+@since 09/12/2017
+-->
 <?php
 	
 	session_start();
