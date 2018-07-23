@@ -1,3 +1,8 @@
+<!-- 
+pagina de login
+@author Neemias Ramos Ferreira | e-mail: neemias.ferreira@fatec.sp.gov.br
+@since 09/12/2017
+-->
 <?php
 
 	$erro_usuario = isset($_GET['erro_usuario']) ? $_GET['erro_usuario'] : 0;
