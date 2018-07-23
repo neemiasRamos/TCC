@@ -1,3 +1,8 @@
+<!-- 
+arquivo php para validar acesso 
+@author Neemias Ramos Ferreira | e-mail: neemias.ferreira@fatec.sp.gov.br
+@since 09/12/2017
+-->
 <?php
 	
 	session_start();
@@ -21,15 +26,16 @@
 
 	if($resultado_id){
 
-		$dados_usuario = mysqli_fetch_array($resultado_id); // retorna os dados em estrutura de array
-		//var_dump($dados_usuario);
+		$dados_usuario = mysqli_fetch_array($resultado_id); 
+		// retorna os dados em estrutura de array
 
-		if(isset($dados_usuario['usuario'])){//se o array estiver preenchido
-			
+		if(isset($dados_usuario['usuario'])){
+		//se o array estiver preenchido
 			$_SESSION['id_usuario'] = $dados_usuario['id'];
-			$_SESSION['usuario'] = $dados_usuario['usuario']; //estamos atribuindo ao indice usuario da superGlobal SESSION -->> ( $_SESSION['usuario'] ) o $dados_usuario no indice usuário --->>> ( $dados_usuario['usuario'] )
+			$_SESSION['usuario'] = $dados_usuario['usuario']; 
 			$_SESSION['email'] = $dados_usuario['email'];
-
+			//estamos atribuindo ao indice usuario da superGlobal SESSION -->> ( $_SESSION['usuario'] ) o $dados_usuario no indice usuário --->>> ( $dados_usuario['usuario'] )
+			
 			header('Location: procurar_pessoas.php');
 		}else{
 			header('Location: login_cliente.php?erro=1'); //erro1 == paramentro via GET
