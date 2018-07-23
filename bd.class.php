@@ -1,3 +1,8 @@
+<!-- 
+classe php para efetuar conexão com o banco de dados
+@author Neemias Ramos Ferreira | e-mail: neemias.ferreira@fatec.sp.gov.br
+@since 09/12/2017
+-->
 <?php
 
 class bd{
